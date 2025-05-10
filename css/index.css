@@ -1,0 +1,40 @@
+main{
+
+}
+.container{
+    margin: 30px;
+    min-height: 100vh;
+}
+
+header{
+    text-align: center;
+}
+
+.grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+}
+.container-left{
+    display:  grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-tino{
+    max-width: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+
+footer{
+    height: auto;
+}
