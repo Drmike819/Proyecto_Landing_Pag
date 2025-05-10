@@ -1,30 +1,51 @@
-main{
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tagesschrift&display=swap');
 
-}
-.container{
-    margin: 30px;
+body {
+    margin: 0;
+    font-family: 'Averi serif libre', serif;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
+    background-color: rgb(215, 216, 216);
+}
+
+.container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
 }
 
 header{
     text-align: center;
+
 }
 
 .grid-layout{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    align-items: stretch;
 }
+
 .container-left{
     display:  grid;
+    flex-direction: column;
+    justify-content: center;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
     align-items: center;
+    margin-top: 20px;
 }
 
 .left, .right{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -32,9 +53,71 @@ header{
     max-width: 100%;
     width: 300px;
     height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+h1{
+    margin-bottom: 10px;
+    font-family: 'Averia Serif Libre', serif;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'Tagesschrift', sans-serif;
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
 
 
-footer{
-    height: auto;
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-width: 500px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 10px;
+  z-index: 10;
+  border-radius: 5px;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
 }

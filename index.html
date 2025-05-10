@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Landing Page</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Tagesschrift&display=swap" rel="stylesheet">
 </head>
-<body>  
+
+<body>
+
+    <header>
+        <h1>Energizante el Tino</h1>
+        <h2>Con Borojo, Chontaduro y Maca</h2>
+    </header>
 
     <div class="container">
-        <header>
-            <h1>Energizante el Tino</h1>
-            <h2>Con Borojo, Chontaduro y Maca</h2>
-        </header>
+
 
         <main class="grid-layout">
-            <div class="left" style="background-color: blue;">
+
+
+            <div class="left">
                 <img class="img-tino" src="/img/tino.avif" alt="tino">
                 <div class="container-left">
                     <div>
@@ -24,24 +33,37 @@
                     <div>
                         <p>
                             Potencia tu día con energía imparable y despierta el deseo con cada sorbo.
-                            El Tino no solo te activa: te transforma en tu mejor versión, más vital, más intenso, más tú.
+                            El Tino no solo te activa: te transforma en tu mejor versión, más vital, más intenso, más
+                            tú.
                             Energía para tu cuerpo, fuego para tus sentidos.
                         </p>
                     </div>
                 </div>
             </div>
-            
-            <div class="right" style="background-color: aquamarine;">
-                jhsdgfjdyshgfygsdyfgysgdygajhdgfgsd f j hsdhf gsjhdf s
+
+            <div class="right">
+                <h2>Conoce mas productos de el "TINO"</h2>
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <img src="/img/tino.avif" alt="Producto 1">
+                        <img src="/img/tino.avif" alt="Producto 2">
+                        <img src="/img/tino.avif" alt="Producto 3">
+                    </div>
+                        <button class="carousel-btn prev">&#10094;</button>
+                        <button class="carousel-btn next">&#10095;</button>
+                </div>
             </div>
 
-            
+
         </main>
-        
-        <footer style="background-color: red;">
-                kjahsdgfkhjg
-        </footer>
+
+
     </div>
 
+    <footer>
+        &copy; 2025 Energizante El Tino. Todos los derechos reservados.
+    </footer>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
